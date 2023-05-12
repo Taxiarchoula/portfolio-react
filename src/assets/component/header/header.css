@@ -1,0 +1,120 @@
+header {
+    height: auto;
+    overflow: hidden;
+    padding-top: 2rem;
+}
+
+.header__container{
+    text-align: center;
+    height: 80%;
+    position: relative;
+}
+
+/* === CTA === */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* === Header Socials === */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+}
+
+.header__socials::after{
+    content: "";
+    width: 1px;
+    height: 2.5rem;
+    background: var(--color-primary);
+}
+
+/* === Me ===
+.me{
+    background: linear-gradient(var(--color-bg-variant), transparent);
+    width: 25rem;
+    height: 25rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    margin-top: 4rem;
+    border-radius: 25rem 25rem 25rem 25rem;
+    overflow: hidden;
+    padding: 5rem 5rem 5rem 5rem;
+} */
+
+/* === Scroll Down === */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* =====Media queries (medium) ===== */
+@media screen and (max-width: 1280px) {
+    header {
+        height: auto;
+        
+
+    }
+}
+/* @media screen and (max-width: 1025px) {
+    header {
+        height: auto;
+
+    }
+
+} */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: auto;
+        
+    }
+    .header__socials, 
+    .scroll__down{
+        display: none;
+    }
+   
+}
+/* =====Media queries (small) =====*/
+@media screen and (max-width: 600px) {
+    header {
+        height: fit-content;
+        padding-top: 2rem;
+    }
+    /* .me{
+        width: 15rem;
+        height: 13rem;
+        left: calc(50% - 7rem);
+    } */
+    .header__socials, 
+    .scroll__down{
+        display: none;
+    }
+}
+/* =====Media queries (Xsmall) =====
+@media screen and (max-width: 400px) {
+    header {
+        height: fit-content;
+        padding-top: 2rem;
+    }
+    /* .me{
+        width: 15rem;
+        height: 13rem;
+        left: calc(50% - 7rem);
+    } */
+    /* .header__socials, 
+    .scroll__down{
+        display: none;
+    }
+} */ 
